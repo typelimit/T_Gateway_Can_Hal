@@ -1,0 +1,1213 @@
+Dependencies for Project 'Gateway_Can_Hal', Target 'Gateway_Can_Hal': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (startup_stm32f103xb.s)(0x687B0C3B)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o gateway_can_hal\startup_stm32f103xb.o --depend gateway_can_hal\startup_stm32f103xb.d)
+F (../Core/Src/main.c)(0x687B3735)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\main.o --omf_browse gateway_can_hal\main.crf --depend gateway_can_hal\main.d)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+I (../Core/Inc/can.h)(0x687B0C37)
+I (../Core/Inc/spi.h)(0x68746923)
+I (../Core/Inc/usart.h)(0x687B0C37)
+I (../Core/Inc/gpio.h)(0x68746367)
+I (..\App\Task\App_Task.h)(0x687B3439)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Common\Debug\Common_Debug.h)(0x6847945C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (..\Inf\W5500\Inf_W5500.h)(0x6874B7D5)
+I (..\Inf\W5500\wizchip_conf.h)(0x684690CB)
+I (..\Inf\W5500\w5500.h)(0x6632F091)
+I (..\Inf\W5500\socket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTClient.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/StackTrace.h)(0x6632F091)
+I (..\Inf\W5500\mqtt_interface.h)(0x6632F091)
+I (..\Common\Cjson\cJSON.h)(0x6642C1DF)
+I (..\Drivers\Can\Driver_Can.h)(0x687B10C4)
+F (../Core/Src/gpio.c)(0x687B0C37)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\gpio.o --omf_browse gateway_can_hal\gpio.crf --depend gateway_can_hal\gpio.d)
+I (../Core/Inc/gpio.h)(0x68746367)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Core/Src/can.c)(0x687B0C37)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\can.o --omf_browse gateway_can_hal\can.crf --depend gateway_can_hal\can.d)
+I (../Core/Inc/can.h)(0x687B0C37)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Core/Src/spi.c)(0x68746923)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\spi.o --omf_browse gateway_can_hal\spi.crf --depend gateway_can_hal\spi.d)
+I (../Core/Inc/spi.h)(0x68746923)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Core/Src/usart.c)(0x687B0C37)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\usart.o --omf_browse gateway_can_hal\usart.crf --depend gateway_can_hal\usart.d)
+I (../Core/Inc/usart.h)(0x687B0C37)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Core/Src/stm32f1xx_it.c)(0x687748D9)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_it.o --omf_browse gateway_can_hal\stm32f1xx_it.crf --depend gateway_can_hal\stm32f1xx_it.d)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+I (../Core/Inc/stm32f1xx_it.h)(0x687748D9)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+F (../Core/Src/stm32f1xx_hal_msp.c)(0x68746368)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_msp.o --omf_browse gateway_can_hal\stm32f1xx_hal_msp.crf --depend gateway_can_hal\stm32f1xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_gpio_ex.o --omf_browse gateway_can_hal\stm32f1xx_hal_gpio_ex.crf --depend gateway_can_hal\stm32f1xx_hal_gpio_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_can.o --omf_browse gateway_can_hal\stm32f1xx_hal_can.crf --depend gateway_can_hal\stm32f1xx_hal_can.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal.o --omf_browse gateway_can_hal\stm32f1xx_hal.crf --depend gateway_can_hal\stm32f1xx_hal.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c)(0x669E6879)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_rcc.o --omf_browse gateway_can_hal\stm32f1xx_hal_rcc.crf --depend gateway_can_hal\stm32f1xx_hal_rcc.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c)(0x669E6879)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_rcc_ex.o --omf_browse gateway_can_hal\stm32f1xx_hal_rcc_ex.crf --depend gateway_can_hal\stm32f1xx_hal_rcc_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_gpio.o --omf_browse gateway_can_hal\stm32f1xx_hal_gpio.crf --depend gateway_can_hal\stm32f1xx_hal_gpio.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_dma.o --omf_browse gateway_can_hal\stm32f1xx_hal_dma.crf --depend gateway_can_hal\stm32f1xx_hal_dma.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_cortex.o --omf_browse gateway_can_hal\stm32f1xx_hal_cortex.crf --depend gateway_can_hal\stm32f1xx_hal_cortex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c)(0x669E6879)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_pwr.o --omf_browse gateway_can_hal\stm32f1xx_hal_pwr.crf --depend gateway_can_hal\stm32f1xx_hal_pwr.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_flash.o --omf_browse gateway_can_hal\stm32f1xx_hal_flash.crf --depend gateway_can_hal\stm32f1xx_hal_flash.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_flash_ex.o --omf_browse gateway_can_hal\stm32f1xx_hal_flash_ex.crf --depend gateway_can_hal\stm32f1xx_hal_flash_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c)(0x669E6878)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_exti.o --omf_browse gateway_can_hal\stm32f1xx_hal_exti.crf --depend gateway_can_hal\stm32f1xx_hal_exti.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c)(0x669E6879)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_spi.o --omf_browse gateway_can_hal\stm32f1xx_hal_spi.crf --depend gateway_can_hal\stm32f1xx_hal_spi.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c)(0x669E6879)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_tim.o --omf_browse gateway_can_hal\stm32f1xx_hal_tim.crf --depend gateway_can_hal\stm32f1xx_hal_tim.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c)(0x669E6879)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_tim_ex.o --omf_browse gateway_can_hal\stm32f1xx_hal_tim_ex.crf --depend gateway_can_hal\stm32f1xx_hal_tim_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c)(0x669E6879)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stm32f1xx_hal_uart.o --omf_browse gateway_can_hal\stm32f1xx_hal_uart.crf --depend gateway_can_hal\stm32f1xx_hal_uart.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (../Core/Src/system_stm32f1xx.c)(0x669E6875)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\system_stm32f1xx.o --omf_browse gateway_can_hal\system_stm32f1xx.crf --depend gateway_can_hal\system_stm32f1xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (..\Common\Debug\Common_Debug.c)(0x68469089)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\common_debug.o --omf_browse gateway_can_hal\common_debug.crf --depend gateway_can_hal\common_debug.d)
+I (..\Common\Debug\Common_Debug.h)(0x6847945C)
+I (../Core/Inc/usart.h)(0x687B0C37)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+F (..\Common\Debug\Common_Debug.h)(0x6847945C)()
+F (..\Common\Cjson\cJSON.c)(0x6642C1DF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\cjson.o --omf_browse gateway_can_hal\cjson.crf --depend gateway_can_hal\cjson.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x65F3D4F1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x65F3D4E2)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x65F3D4F4)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x65F3D4FF)
+I (C:\Keil_v5\ARM\ARMCC\include\float.h)(0x65F3D4FB)
+I (..\Common\Cjson\cJSON.h)(0x6642C1DF)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+F (..\Common\Cjson\cJSON.h)(0x6642C1DF)()
+F (..\App\Task\App_Task.c)(0x687B3D8F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\app_task.o --omf_browse gateway_can_hal\app_task.crf --depend gateway_can_hal\app_task.d)
+I (..\App\Task\App_Task.h)(0x687B3439)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Common\Debug\Common_Debug.h)(0x6847945C)
+I (../Core/Inc/usart.h)(0x687B0C37)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (..\Inf\W5500\Inf_W5500.h)(0x6874B7D5)
+I (../Core/Inc/spi.h)(0x68746923)
+I (..\Inf\W5500\wizchip_conf.h)(0x684690CB)
+I (..\Inf\W5500\w5500.h)(0x6632F091)
+I (..\Inf\W5500\socket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTClient.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/StackTrace.h)(0x6632F091)
+I (..\Inf\W5500\mqtt_interface.h)(0x6632F091)
+I (..\Common\Cjson\cJSON.h)(0x6642C1DF)
+I (..\Drivers\Can\Driver_Can.h)(0x687B10C4)
+I (../Core/Inc/can.h)(0x687B0C37)
+F (..\App\Task\App_Task.h)(0x687B3439)()
+F (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)()
+F (..\Mid\FreeRTOS\source\croutine.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\croutine.o --omf_browse gateway_can_hal\croutine.crf --depend gateway_can_hal\croutine.d)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\croutine.h)(0x64020E50)
+F (..\Mid\FreeRTOS\source\event_groups.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\event_groups.o --omf_browse gateway_can_hal\event_groups.crf --depend gateway_can_hal\event_groups.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x65F3D4E2)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\timers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\event_groups.h)(0x64020E50)
+F (..\Mid\FreeRTOS\source\list.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\list.o --omf_browse gateway_can_hal\list.crf --depend gateway_can_hal\list.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x65F3D4E2)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+F (..\Mid\FreeRTOS\source\queue.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\queue.o --omf_browse gateway_can_hal\queue.crf --depend gateway_can_hal\queue.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x65F3D4E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\queue.h)(0x64020E50)
+F (..\Mid\FreeRTOS\source\stream_buffer.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\stream_buffer.o --omf_browse gateway_can_hal\stream_buffer.crf --depend gateway_can_hal\stream_buffer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\stream_buffer.h)(0x64020E50)
+F (..\Mid\FreeRTOS\source\tasks.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\tasks.o --omf_browse gateway_can_hal\tasks.crf --depend gateway_can_hal\tasks.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x65F3D4E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\timers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\stack_macros.h)(0x64020E50)
+F (..\Mid\FreeRTOS\source\timers.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\timers.o --omf_browse gateway_can_hal\timers.crf --depend gateway_can_hal\timers.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x65F3D4E2)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\queue.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\timers.h)(0x64020E50)
+F (..\Mid\FreeRTOS\include\atomic.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\croutine.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\event_groups.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\list.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\message_buffer.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\mpu_prototypes.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\queue.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\semphr.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\stack_macros.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\StackMacros.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\stream_buffer.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\task.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\include\timers.h)(0x64020E50)()
+F (..\Mid\FreeRTOS\portable\heap_4.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\heap_4.o --omf_browse gateway_can_hal\heap_4.crf --depend gateway_can_hal\heap_4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x65F3D4E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+F (..\Mid\FreeRTOS\portable\port.c)(0x64020E50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\port.o --omf_browse gateway_can_hal\port.crf --depend gateway_can_hal\port.d)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+F (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)()
+F (..\Inf\W5500\Inf_W5500.c)(0x687B37A0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\inf_w5500.o --omf_browse gateway_can_hal\inf_w5500.crf --depend gateway_can_hal\inf_w5500.d)
+I (..\Inf\W5500\Inf_W5500.h)(0x6874B7D5)
+I (../Core/Inc/spi.h)(0x68746923)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+I (..\Inf\W5500\wizchip_conf.h)(0x684690CB)
+I (..\Inf\W5500\w5500.h)(0x6632F091)
+I (..\Common\Debug\Common_Debug.h)(0x6847945C)
+I (../Core/Inc/usart.h)(0x687B0C37)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (..\Inf\W5500\socket.h)(0x6632F091)
+I (..\Mid\FreeRTOS\include\FreeRTOS.h)(0x64020E50)
+I (..\Mid\FreeRTOS\FreeRTOSConfig.h)(0x68746665)
+I (..\Mid\FreeRTOS\include\projdefs.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\portable.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\deprecated_definitions.h)(0x64020E50)
+I (..\Mid\FreeRTOS\portable\portmacro.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\mpu_wrappers.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\task.h)(0x64020E50)
+I (..\Mid\FreeRTOS\include\list.h)(0x64020E50)
+I (..\Inf\W5500\MQTTClient.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/StackTrace.h)(0x6632F091)
+I (..\Inf\W5500\mqtt_interface.h)(0x6632F091)
+F (..\Inf\W5500\Inf_W5500.h)(0x6874B7D5)()
+F (..\Inf\W5500\mqtt_interface.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqtt_interface.o --omf_browse gateway_can_hal\mqtt_interface.crf --depend gateway_can_hal\mqtt_interface.d)
+I (..\Inf\W5500\mqtt_interface.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Inf\W5500\wizchip_conf.h)(0x684690CB)
+I (..\Inf\W5500\w5500.h)(0x6632F091)
+I (..\Inf\W5500\socket.h)(0x6632F091)
+F (..\Inf\W5500\mqtt_interface.h)(0x6632F091)()
+F (..\Inf\W5500\MQTTClient.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttclient.o --omf_browse gateway_can_hal\mqttclient.crf --depend gateway_can_hal\mqttclient.d)
+I (..\Inf\W5500\MQTTClient.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\./MQTTPacket/src/StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (..\Inf\W5500\mqtt_interface.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+F (..\Inf\W5500\MQTTClient.h)(0x6632F091)()
+F (..\Inf\W5500\socket.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\socket.o --omf_browse gateway_can_hal\socket.crf --depend gateway_can_hal\socket.d)
+I (..\Inf\W5500\socket.h)(0x6632F091)
+I (..\Inf\W5500\wizchip_conf.h)(0x684690CB)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Inf\W5500\w5500.h)(0x6632F091)
+F (..\Inf\W5500\socket.h)(0x6632F091)()
+F (..\Inf\W5500\w5500.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\w5500.o --omf_browse gateway_can_hal\w5500.crf --depend gateway_can_hal\w5500.d)
+I (..\Inf\W5500\w5500.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Inf\W5500\wizchip_conf.h)(0x684690CB)
+F (..\Inf\W5500\w5500.h)(0x6632F091)()
+F (..\Inf\W5500\wizchip_conf.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\wizchip_conf.o --omf_browse gateway_can_hal\wizchip_conf.crf --depend gateway_can_hal\wizchip_conf.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (..\Inf\W5500\wizchip_conf.h)(0x684690CB)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (..\Inf\W5500\w5500.h)(0x6632F091)
+F (..\Inf\W5500\wizchip_conf.h)(0x684690CB)()
+F (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)()
+F (..\Inf\W5500\MQTTPacket\src\MQTTConnectClient.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttconnectclient.o --omf_browse gateway_can_hal\mqttconnectclient.crf --depend gateway_can_hal\mqttconnectclient.d)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTConnectServer.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttconnectserver.o --omf_browse gateway_can_hal\mqttconnectserver.crf --depend gateway_can_hal\mqttconnectserver.d)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTDeserializePublish.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttdeserializepublish.o --omf_browse gateway_can_hal\mqttdeserializepublish.crf --depend gateway_can_hal\mqttdeserializepublish.d)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTFormat.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttformat.o --omf_browse gateway_can_hal\mqttformat.crf --depend gateway_can_hal\mqttformat.d)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)()
+F (..\Inf\W5500\MQTTPacket\src\MQTTPacket.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttpacket.o --omf_browse gateway_can_hal\mqttpacket.crf --depend gateway_can_hal\mqttpacket.d)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)()
+F (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)()
+F (..\Inf\W5500\MQTTPacket\src\MQTTSerializePublish.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttserializepublish.o --omf_browse gateway_can_hal\mqttserializepublish.crf --depend gateway_can_hal\mqttserializepublish.d)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)()
+F (..\Inf\W5500\MQTTPacket\src\MQTTSubscribeClient.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttsubscribeclient.o --omf_browse gateway_can_hal\mqttsubscribeclient.crf --depend gateway_can_hal\mqttsubscribeclient.d)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTSubscribeServer.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttsubscribeserver.o --omf_browse gateway_can_hal\mqttsubscribeserver.crf --depend gateway_can_hal\mqttsubscribeserver.d)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)()
+F (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribeClient.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttunsubscribeclient.o --omf_browse gateway_can_hal\mqttunsubscribeclient.crf --depend gateway_can_hal\mqttunsubscribeclient.d)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribeServer.c)(0x6632F091)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\mqttunsubscribeserver.o --omf_browse gateway_can_hal\mqttunsubscribeserver.crf --depend gateway_can_hal\mqttunsubscribeserver.d)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPacket.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTConnect.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTPublish.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\MQTTFormat.h)(0x6632F091)
+I (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x65F3D4E3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x65F3D4DC)
+F (..\Inf\W5500\MQTTPacket\src\StackTrace.h)(0x6632F091)()
+F (..\Drivers\Can\Driver_Can.c)(0x687B163F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\App\Task -I ..\Common\Cjson -I ..\Common\Debug -I ..\Drivers\Can -I ..\Inf\W5500 -I ..\Mid\FreeRTOS -I ..\Mid\FreeRTOS\include -I ..\Mid\FreeRTOS\portable -I ..\Mid\FreeRTOS\source-I.\RTE\_Gateway_Can_Hal-IC:\KeilPacks\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\KeilPacks\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o gateway_can_hal\driver_can.o --omf_browse gateway_can_hal\driver_can.crf --depend gateway_can_hal\driver_can.d)
+I (..\Drivers\Can\Driver_Can.h)(0x687B10C4)
+I (../Core/Inc/can.h)(0x687B0C37)
+I (../Core/Inc/main.h)(0x68746C1B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x669E6878)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x687B0C38)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x669E6878)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x669E6875)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x669E6875)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67D6991A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x65F3D4E5)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67D6991A)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67D6991A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x669E6875)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x669E6875)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x65F3D4E6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x669E6878)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x669E6879)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x669E6879)
+F (..\Drivers\Can\Driver_Can.h)(0x687B10C4)()

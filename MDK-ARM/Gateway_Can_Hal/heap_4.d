@@ -1,0 +1,14 @@
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\portable\heap_4.c
+gateway_can_hal\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+gateway_can_hal\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\include\FreeRTOS.h
+gateway_can_hal\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+gateway_can_hal\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\FreeRTOSConfig.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\include\projdefs.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\include\portable.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\include\deprecated_definitions.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\portable\portmacro.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\include\mpu_wrappers.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\include\task.h
+gateway_can_hal\heap_4.o: ..\Mid\FreeRTOS\include\list.h

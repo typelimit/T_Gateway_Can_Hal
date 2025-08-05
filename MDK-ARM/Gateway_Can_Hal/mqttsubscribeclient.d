@@ -1,0 +1,11 @@
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\MQTTSubscribeClient.c
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\MQTTPacket.h
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\MQTTConnect.h
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\MQTTPublish.h
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\MQTTSubscribe.h
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\MQTTUnsubscribe.h
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\MQTTFormat.h
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\StackTrace.h
+gateway_can_hal\mqttsubscribeclient.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+gateway_can_hal\mqttsubscribeclient.o: ..\Inf\W5500\MQTTPacket\src\MQTTPacket.h
+gateway_can_hal\mqttsubscribeclient.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
