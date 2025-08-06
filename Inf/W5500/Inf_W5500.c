@@ -16,9 +16,8 @@ Network n = {0};
 #define SOCKET_NUM 0
 
 // mqtt服务器ip——————————现在不能用本地的mqtt服务器，而是用云端免费的那个
-#define MQTT_SERVER_HOST "broker.emqx.io"
+static uint8_t MQTT_SERVER_IP[4] = {18, 163, 38, 148};
 #define MQTT_SERVER_PORT 1883
-// 订阅的主题
 #define SUB_TOPIC "zhangziheng"
 
 // 发送缓冲和接收缓冲
@@ -131,7 +130,7 @@ void Inf_MQTT_Init(void)
     // 创建网络
     NewNetwork(&n, SOCKET_NUM);
     // 连接网络
-    ConnectNetwork(&n, MQTT_SERVER_HOST, MQTT_SERVER_PORT);
+    ConnectNetwork(&n, MQTT_SERVER_IP, MQTT_SERVER_PORT); // 传入uint8_t[4]
     // 客户端初始化
     MQTTClientInit(&c, &n, 1000, mqtt_send_ethernet_buf, ETHERNET_BUF_MAX_SIZE, mqtt_recv_ethernet_buf, ETHERNET_BUF_MAX_SIZE);
 
@@ -143,7 +142,6 @@ void Inf_MQTT_Init(void)
     debug_println("准备连接服务器...");
     // 连接MQTT服务器
     uint8_t ret = MQTTConnect(&c, &data);
-    printf("Connect to the MQTT server: %s:%d\r\n", MQTT_SERVER_HOST, MQTT_SERVER_PORT);
 
     printf("服务器连接:%s\r\n\r\n", ret == SUCCESSS ? "success" : "failed");
     printf("准备订阅[%s]\r\n", SUB_TOPIC);

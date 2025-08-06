@@ -96,7 +96,7 @@ void App_Task_ReceiveMQTT(uint8_t *datas, uint16_t len)
         HAL_Delay(1000);
         datas[0] = 0x02;
         // ·¢ËÍ²éÑ¯Ö¸Áî
-        Driver_Can_Transmit(id->valueint,datas, 8 );
+        Driver_Can_Transmit(id->valueint, datas, 8);
     }
 
     cJSON_Delete(json);
@@ -165,7 +165,7 @@ void App_Task_CANFunction(void *args)
             cJSON_AddStringToObject(root, "dir", datas[1] == 0 ? "backward" : "forward");
             cJSON_AddNumberToObject(root, "speed", ((datas[2] << 8) | datas[3]) * 1.0);
             char *json = cJSON_PrintUnformatted(root);
-            Inf_MQTT_Transmit("response", json, strlen(json));
+            Inf_MQTT_Transmit((uint8_t *)"response", (uint8_t *)json, strlen(json));
             cJSON_Delete(root);
         }
     }
