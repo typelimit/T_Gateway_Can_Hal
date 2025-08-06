@@ -15,9 +15,11 @@ Network n = {0};
 // socket编号
 #define SOCKET_NUM 0
 
-// mqtt服务器ip
-static uint8_t MQTT_SERVER_IP[4] = {192, 168, 56, 37};
+// mqtt服务器ip——————————现在不能用本地的mqtt服务器，而是用云端免费的那个
+#define MQTT_SERVER_HOST "broker.emqx.io"
 #define MQTT_SERVER_PORT 1883
+// 订阅的主题
+#define SUB_TOPIC "zhangziheng"
 
 // 发送缓冲和接收缓冲
 #define ETHERNET_BUF_MAX_SIZE 1024
@@ -26,9 +28,6 @@ static uint8_t mqtt_send_ethernet_buf[ETHERNET_BUF_MAX_SIZE] = {0};
 static uint8_t mqtt_recv_ethernet_buf[ETHERNET_BUF_MAX_SIZE] = {0};
 
 MQTTPacket_connectData data = MQTTPacket_connectData_initializer;
-
-// 订阅的主题
-#define SUB_TOPIC "atguigu"
 
 MQTT_Receive_Callback callback;
 
@@ -132,7 +131,7 @@ void Inf_MQTT_Init(void)
     // 创建网络
     NewNetwork(&n, SOCKET_NUM);
     // 连接网络
-    ConnectNetwork(&n, MQTT_SERVER_IP, MQTT_SERVER_PORT);
+    ConnectNetwork(&n, MQTT_SERVER_HOST, MQTT_SERVER_PORT);
     // 客户端初始化
     MQTTClientInit(&c, &n, 1000, mqtt_send_ethernet_buf, ETHERNET_BUF_MAX_SIZE, mqtt_recv_ethernet_buf, ETHERNET_BUF_MAX_SIZE);
 
@@ -140,11 +139,12 @@ void Inf_MQTT_Init(void)
     data.MQTTVersion = 4; // MQTT版本
     data.clientID.cstring = "user1";
     data.keepAliveInterval = 0; // 心跳间隔
-    data.cleansession = 1;       // 是否清除回话
+    data.cleansession = 1;      // 是否清除回话
     debug_println("准备连接服务器...");
     // 连接MQTT服务器
-    uint8_t ret = MQTTConnect(&c, &data); 
-    printf("Connect to the MQTT server: %d.%d.%d.%d:%d\r\n", MQTT_SERVER_IP[0], MQTT_SERVER_IP[1], MQTT_SERVER_IP[2], MQTT_SERVER_IP[3], MQTT_SERVER_PORT);
+    uint8_t ret = MQTTConnect(&c, &data);
+    printf("Connect to the MQTT server: %s:%d\r\n", MQTT_SERVER_HOST, MQTT_SERVER_PORT);
+
     printf("服务器连接:%s\r\n\r\n", ret == SUCCESSS ? "success" : "failed");
     printf("准备订阅[%s]\r\n", SUB_TOPIC);
     // 订阅主题
@@ -184,5 +184,4 @@ void Inf_MQTT_Transmit(uint8_t *topicName, uint8_t *datas, uint16_t len)
 void Inf_MQTT_Keepalive(void)
 {
     MQTTYield(&c, 30);
-
 }
