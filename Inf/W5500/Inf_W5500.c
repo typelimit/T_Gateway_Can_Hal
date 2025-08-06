@@ -16,7 +16,7 @@ Network n = {0};
 #define SOCKET_NUM 0
 
 // mqtt服务器ip——————————现在不能用本地的mqtt服务器，而是用云端免费的那个
-static uint8_t MQTT_SERVER_IP[4] = {18, 163, 38, 148};
+static uint8_t MQTT_SERVER_IP[4] = {166, 117, 39, 65};
 #define MQTT_SERVER_PORT 1883
 #define SUB_TOPIC "zhangziheng"
 
@@ -122,16 +122,10 @@ static void Inf_W5500_ReceiveCallback(MessageData *md)
  */
 void Inf_MQTT_Init(void)
 {
-
-    // 1、初始化网络环境
+    // ...原有内容...
     Inf_W5500_Init();
-
-    // 2、初始化MQTT
-    // 创建网络
     NewNetwork(&n, SOCKET_NUM);
-    // 连接网络
     ConnectNetwork(&n, MQTT_SERVER_IP, MQTT_SERVER_PORT); // 传入uint8_t[4]
-    // 客户端初始化
     MQTTClientInit(&c, &n, 1000, mqtt_send_ethernet_buf, ETHERNET_BUF_MAX_SIZE, mqtt_recv_ethernet_buf, ETHERNET_BUF_MAX_SIZE);
 
     data.willFlag = 0;    // 不使用遗嘱消息
@@ -145,9 +139,18 @@ void Inf_MQTT_Init(void)
 
     printf("服务器连接:%s\r\n\r\n", ret == SUCCESSS ? "success" : "failed");
     printf("准备订阅[%s]\r\n", SUB_TOPIC);
-    // 订阅主题
-    ret = MQTTSubscribe(&c, SUB_TOPIC, QOS0, Inf_W5500_ReceiveCallback); /* Subscribe to Topics */
+    ret = MQTTSubscribe(&c, SUB_TOPIC, QOS0, Inf_W5500_ReceiveCallback);
     printf("%s\r\n", ret == SUCCESSS ? "topic订阅成功" : "topic订阅失败");
+
+    // --- 这里是新增的“自报家门”代码 ---
+    if (ret == SUCCESSS)
+    {
+        // 构造hello JSON消息
+        const char *hello_msg = "{\"msg\":\"hello,I am a gateway\"}";
+        // 发送到zhangziheng topic
+        Inf_MQTT_Transmit((uint8_t *)SUB_TOPIC, (uint8_t *)hello_msg, strlen(hello_msg));
+        debug_println("网关已上线，自报家门：%s", hello_msg);
+    }
 }
 
 /**
