@@ -1,26 +1,27 @@
 #include "Inf_W5500.h"
 
-// macµØÖ·[²»ÄÜºÍÆäËûÈËÒ»Ñù]
+#define MQTT_KEEPALIVE_INTERVAL 60
+// macåœ°å€[ä¸èƒ½å’Œå…¶ä»–äººä¸€æ ·]
 uint8_t mac[6] = {0xC4, 0xEF, 0xBB, 0x98, 0xEC, 0xA2};
-// Íø¹Ø[±ØĞëºÍµçÄÔÒ»Ñù]
+// ç½‘å…³[å¿…é¡»å’Œç”µè„‘ä¸€æ ·]
 uint8_t gw[4] = {192, 168, 56, 1};
-// ×ÓÍøÑÚÂë[255.255.255.0]
+// å­ç½‘æ©ç [255.255.255.0]
 uint8_t sub[4] = {255, 255, 255, 0};
-// ipµØÖ·[²»ÄÜºÍÆäËûÈËÒ»Ñù][±ØĞëºÍµçÄÔÔÚÍ¬Ò»¸öÍø¶Î]
+// ipåœ°å€[ä¸èƒ½å’Œå…¶ä»–äººä¸€æ ·][å¿…é¡»å’Œç”µè„‘åœ¨åŒä¸€ä¸ªç½‘æ®µ]
 uint8_t ip[4] = {192, 168, 56, 111};
 
 MQTTClient c = {0};
 Network n = {0};
 
-// socket±àºÅ
+// socketç¼–å·
 #define SOCKET_NUM 0
 
-// mqtt·şÎñÆ÷ip¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªÏÖÔÚ²»ÄÜÓÃ±¾µØµÄmqtt·şÎñÆ÷£¬¶øÊÇÓÃÔÆ¶ËÃâ·ÑµÄÄÇ¸ö
+// mqttæœåŠ¡å™¨ipâ€”â€”â€”â€”â€”â€”â€”â€”â€”â€”ç°åœ¨ä¸èƒ½ç”¨æœ¬åœ°çš„mqttæœåŠ¡å™¨ï¼Œè€Œæ˜¯ç”¨äº‘ç«¯å…è´¹çš„é‚£ä¸ª
 static uint8_t MQTT_SERVER_IP[4] = {166, 117, 39, 65};
 #define MQTT_SERVER_PORT 1883
 #define SUB_TOPIC "zhangziheng"
 
-// ·¢ËÍ»º³åºÍ½ÓÊÕ»º³å
+// å‘é€ç¼“å†²å’Œæ¥æ”¶ç¼“å†²
 #define ETHERNET_BUF_MAX_SIZE 1024
 uint8_t ethernet_buf[ETHERNET_BUF_MAX_SIZE] = {0};
 static uint8_t mqtt_send_ethernet_buf[ETHERNET_BUF_MAX_SIZE] = {0};
@@ -42,18 +43,18 @@ extern void vPortExitCritical(void);
 
 static void Inf_W5500_RegisterCallback(void)
 {
-    // ×¢²áSPIµÄÆ¬Ñ¡ºÍÈ¡ÏûÆ¬Ñ¡º¯Êı
+    // æ³¨å†ŒSPIçš„ç‰‡é€‰å’Œå–æ¶ˆç‰‡é€‰å‡½æ•°
     reg_wizchip_cs_cbfunc(Driver_SPI_Start, Driver_SPI_Stop);
 
-    // ×¢²áSPIµÄ¶ÁĞ´º¯Êı
+    // æ³¨å†ŒSPIçš„è¯»å†™å‡½æ•°
     reg_wizchip_spi_cbfunc(Driver_SPI_ReadByte, Driver_SPI_WriteByte);
 
-    // ×¢²áÁÙ½çÇøº¯Êı
+    // æ³¨å†Œä¸´ç•ŒåŒºå‡½æ•°
     reg_wizchip_cris_cbfunc(vPortEnterCritical, vPortExitCritical);
 }
 
 /**
- * @brief ¸´Î»
+ * @brief å¤ä½
  *
  */
 static void Inf_W5500_Reset(void)
@@ -65,21 +66,21 @@ static void Inf_W5500_Reset(void)
 }
 
 /**
- * @brief ÅäÖÃÍøÂç»·¾³
+ * @brief é…ç½®ç½‘ç»œç¯å¢ƒ
  *
  */
 static void Inf_W5500_ConfigNetwork(void)
 {
-    // ÅäÖÃmacµØÖ·[Ã¿¸öÈËÒª²»Ò»Ñù]
+    // é…ç½®macåœ°å€[æ¯ä¸ªäººè¦ä¸ä¸€æ ·]
     setSHAR(mac);
-    // ÅäÖÃÍø¹Ø
+    // é…ç½®ç½‘å…³
     setGAR(gw);
-    // ÉèÖÃ×ÓÍøÑÚÂë
+    // è®¾ç½®å­ç½‘æ©ç 
     setSUBR(sub);
-    // ÉèÖÃIP
+    // è®¾ç½®IP
     setSIPR(ip);
 
-    // »ñÈ¡ÉèÖÃµÄip\gw\sub
+    // è·å–è®¾ç½®çš„ip\gw\sub
     getGAR(gw);
     getSUBR(sub);
     getSIPR(ip);
@@ -89,23 +90,26 @@ static void Inf_W5500_ConfigNetwork(void)
     debug_println(" Gateway     : %d.%d.%d.%d\r\n", gw[0], gw[1], gw[2], gw[3]);
 }
 /**
- * @brief ³õÊ¼»¯W5500
+    if (callback)
+    {
+        callback((uint8_t *)md->message->payload, md->message->payloadlen);
+    }
  *
  */
-void Inf_W5500_Init(void)
+    data.keepAliveInterval = MQTT_KEEPALIVE_INTERVAL; // 
 {
 
-    // ×¢²áSPIµÄ»Øµ÷º¯Êı¸øW5500
+    // æ³¨å†ŒSPIçš„å›è°ƒå‡½æ•°ç»™W5500
     Inf_W5500_RegisterCallback();
 
-    // ¸´Î»W5500
+    // å¤ä½W5500
     Inf_W5500_Reset();
 
-    // ÅäÖÃÍøÂç»·¾³
+    // é…ç½®ç½‘ç»œç¯å¢ƒ
     Inf_W5500_ConfigNetwork();
 }
 /**
- * @brief ÊÕµ½ÏûÏ¢Ö®ºóµÄ´¦Àíº¯Êı
+ * @brief æ”¶åˆ°æ¶ˆæ¯ä¹‹åçš„å¤„ç†å‡½æ•°
  *
  * @param args
  */
@@ -113,48 +117,48 @@ static void Inf_W5500_ReceiveCallback(MessageData *md)
 {
     debug_println("%.*s", (int)md->topicName->lenstring.len, md->topicName->lenstring.data);
 
-    // ´¦ÀíÊı¾İ
+    // å¤„ç†æ•°æ®
     callback((uint8_t *)md->message->payload, md->message->payloadlen);
 }
 /**
- * @brief ³õÊ¼»¯mqtt
+ * @brief åˆå§‹åŒ–mqtt
  *
  */
 void Inf_MQTT_Init(void)
 {
-    // ...Ô­ÓĞÄÚÈİ...
+    // ...åŸæœ‰å†…å®¹...
     Inf_W5500_Init();
     NewNetwork(&n, SOCKET_NUM);
-    ConnectNetwork(&n, MQTT_SERVER_IP, MQTT_SERVER_PORT); // ´«Èëuint8_t[4]
+    ConnectNetwork(&n, MQTT_SERVER_IP, MQTT_SERVER_PORT); // ä¼ å…¥uint8_t[4]
     MQTTClientInit(&c, &n, 1000, mqtt_send_ethernet_buf, ETHERNET_BUF_MAX_SIZE, mqtt_recv_ethernet_buf, ETHERNET_BUF_MAX_SIZE);
 
-    data.willFlag = 0;    // ²»Ê¹ÓÃÒÅÖöÏûÏ¢
-    data.MQTTVersion = 4; // MQTT°æ±¾
+    data.willFlag = 0;    // ä¸ä½¿ç”¨é—å˜±æ¶ˆæ¯
+    data.MQTTVersion = 4; // MQTTç‰ˆæœ¬
     data.clientID.cstring = "user1";
-    data.keepAliveInterval = 0; // ĞÄÌø¼ä¸ô
-    data.cleansession = 1;      // ÊÇ·ñÇå³ı»Ø»°
-    debug_println("×¼±¸Á¬½Ó·şÎñÆ÷...");
-    // Á¬½ÓMQTT·şÎñÆ÷
+    data.keepAliveInterval = 0; // å¿ƒè·³é—´éš”
+    data.cleansession = 1;      // æ˜¯å¦æ¸…é™¤å›è¯
+    debug_println("å‡†å¤‡è¿æ¥æœåŠ¡å™¨...");
+    // è¿æ¥MQTTæœåŠ¡å™¨
     uint8_t ret = MQTTConnect(&c, &data);
 
-    printf("·şÎñÆ÷Á¬½Ó:%s\r\n\r\n", ret == SUCCESSS ? "success" : "failed");
-    printf("×¼±¸¶©ÔÄ[%s]\r\n", SUB_TOPIC);
+    printf("æœåŠ¡å™¨è¿æ¥:%s\r\n\r\n", ret == SUCCESSS ? "success" : "failed");
+    printf("å‡†å¤‡è®¢é˜…[%s]\r\n", SUB_TOPIC);
     ret = MQTTSubscribe(&c, SUB_TOPIC, QOS0, Inf_W5500_ReceiveCallback);
-    printf("%s\r\n", ret == SUCCESSS ? "topic¶©ÔÄ³É¹¦" : "topic¶©ÔÄÊ§°Ü");
+    printf("%s\r\n", ret == SUCCESSS ? "topicè®¢é˜…æˆåŠŸ" : "topicè®¢é˜…å¤±è´¥");
 
-    // --- ÕâÀïÊÇĞÂÔöµÄ¡°×Ô±¨¼ÒÃÅ¡±´úÂë ---
+    // --- è¿™é‡Œæ˜¯æ–°å¢çš„â€œè‡ªæŠ¥å®¶é—¨â€ä»£ç  ---
     if (ret == SUCCESSS)
     {
-        // ¹¹Ôìhello JSONÏûÏ¢
+        // æ„é€ hello JSONæ¶ˆæ¯
         const char *hello_msg = "{\"msg\":\"hello,I am a gateway\"}";
-        // ·¢ËÍµ½zhangziheng topic
+        // å‘é€åˆ°zhangziheng topic
         Inf_MQTT_Transmit((uint8_t *)SUB_TOPIC, (uint8_t *)hello_msg, strlen(hello_msg));
-        debug_println("Íø¹ØÒÑÉÏÏß£¬×Ô±¨¼ÒÃÅ£º%s", hello_msg);
+        debug_println("ç½‘å…³å·²ä¸Šçº¿ï¼Œè‡ªæŠ¥å®¶é—¨ï¼š%s", hello_msg);
     }
 }
 
 /**
- * @brief ×¢²á½ÓÊÕÊı¾İºóµÄ´¦Àíº¯Êı
+ * @brief æ³¨å†Œæ¥æ”¶æ•°æ®åçš„å¤„ç†å‡½æ•°
  *
  * @param cb
  */
@@ -164,7 +168,11 @@ void Inf_MQTT_RegisterReceiveCallback(MQTT_Receive_Callback cb)
 }
 
 /**
- * @brief ÏòTopic·¢ËÍÊı¾İ
+    if (MQTTYield(&c, 30) != SUCCESSS)
+    {
+        debug_println("MQTT connection lost, reconnecting...");
+        Inf_MQTT_Init();
+    }
  *
  * @param datas
  * @param len
@@ -174,12 +182,12 @@ void Inf_MQTT_Transmit(uint8_t *topicName, uint8_t *datas, uint16_t len)
     pubmessage.qos = QOS0;
     pubmessage.payload = datas;
     pubmessage.payloadlen = len;
-    // ·¢²¼ÏûÏ¢µ½TOPIC
+    // å‘å¸ƒæ¶ˆæ¯åˆ°TOPIC
     MQTTPublish(&c, (char *)topicName, &pubmessage);
 }
 
 /**
- * @brief ·¢ËÍĞÄÌø
+ * @brief å‘é€å¿ƒè·³
  *
  */
 void Inf_MQTT_Keepalive(void)
